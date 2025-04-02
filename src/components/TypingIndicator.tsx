@@ -3,16 +3,16 @@ import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
 const Container = styled.div`
-  padding: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 4px;
+  padding: 8px;
 `;
 
 const Dot = styled(motion.div)`
-  width: 8px;
-  height: 8px;
-  background: #007AFF;
+  width: 4px;
+  height: 4px;
+  background: #c5c5d2;
   border-radius: 50%;
 `;
 
@@ -22,12 +22,12 @@ const TypingIndicator: React.FC = () => {
       {[0, 1, 2].map((i) => (
         <Dot
           key={i}
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
+          animate={{
+            y: [0, -4, 0],
+          }}
           transition={{
-            duration: 0.5,
+            duration: 0.6,
             repeat: Infinity,
-            repeatType: "reverse",
             delay: i * 0.2,
           }}
         />

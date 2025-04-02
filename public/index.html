@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#007AFF" />
+    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="AI Voice Assistant with chat capabilities"
+      content="AI Chat Assistant"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
     <!--
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <title>AI Voice Assistant</title>
+    <title>AI Assistant</title>
     <style>
       /* Add some basic styles to ensure proper rendering */
       * {
@@ -31,38 +31,26 @@
       }
 
       body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-          'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 
-          'Droid Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+          Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #f0f2f5;
+        background: #343541;
       }
 
       #root {
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
       }
 
-      /* Add a simple loading state */
       .initial-loading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        color: #007AFF;
-        font-size: 1.5rem;
-        text-align: center;
+        display: none; /* Hide the loading message */
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-      <div class="initial-loading">
-        Loading AI Voice Assistant...
-      </div>
-    </div>
+    <div id="root"></div>
   </body>
 </html> 

@@ -3,7 +3,6 @@ export interface Message {
   content: string;
   type: 'user' | 'bot';
   timestamp: Date;
-  isLoading?: boolean;
 }
 
 export interface ChatState {
